@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-blur blur-1"></div>
+<div class="bg-blur blur-2"></div>
+<header class="hero">
+    <h1 class="gradient-text">My Landing Page</h1>
+    <p>Welcome to my simple web page</p>
+    <i class="fa-solid fa-arrow-down bounce-icon"></i>
+</header>
+<section class="about reveal">
+    <h2>About</h2>
+    <div class="card glass">
+        <p>
+            This is a simple landing page created using HTML and CSS. 
+            It is designed to be clean, user-friendly, and responsive.
+        </p>
+    </div>
+</section>
+<section class="features reveal">
+    <h2>Features</h2>
+    <div class="box-container">
+        <div class="box glass">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <h3>Easy to Use</h3>
+        </div>
+        <div class="box glass">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h3>Responsive Design</h3>
+        </div>
+        <div class="box glass">
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>Clean Layout</h3>
+        </div>
+    </div>
+</section>
+<section class="contact reveal">
+    <h2>Contact</h2>
+    <div class="contact-card glass">
+        <i class="fa-solid fa-envelope"></i>
+        <p>Email: <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+    </div>
+</section>
+<footer>
+    <p>© 2026 My Landing Page. Built with HTML & CSS.</p>
+</footer>
+<script>
+    const reveals = document.querySelectorAll(".reveal");
+    function revealOnScroll() {
+        for (let i = 0; i < reveals.length; i++) {
+            let windowHeight = window.innerHeight;
+            let elementTop = reveals[i].getBoundingClientRect().top;
+            let elementVisible = 100;
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            }
+        }
+    }
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll(); // Trigger once on load
+</script>
+
+</body>
+</html>

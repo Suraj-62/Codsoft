@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio - Showcasing modern web design and development skills.">
+    <title>Suraj Kumar Mishra | Web Developer</title>
+    
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar" aria-label="Main Navigation">
+            <a href="#home" class="logo"><span>Suraj kumar mishra</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link btn-contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero section">
+            <div class="hero-content fade-in">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="title">Suraj Kumar <br><span class="gradient-text">Mishra</span></h1>
+                <p class="subtitle">I build premium, responsive, and dynamic user interfaces.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="suraj%20cv%20(2).pdf" target="_blank" class="btn btn-secondary">Download CV</a>
+                </div>
+            </div>
+            <div class="hero-graphic fade-in delay">
+                <div class="profile-pic-container">
+                    <img src="suraj%20pic.jpeg" alt="Suraj Mishra" class="profile-pic">
+                </div>
+                <div class="abstract-shape shape-1"></div>
+                <div class="abstract-shape shape-2"></div>
+                <div class="abstract-shape shape-3"></div>
+            </div>
+        </section>
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="about-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                    <div class="about-text fade-in">
+                        <p>I am a passionate web developer with a keen eye for aesthetics and a drive for performance. I specialize in building modern web applications that provide an immersive and intuitive user experience.</p>
+                        <p>My tech stack revolves around HTML, CSS, JavaScript, and various modern frameworks. I believe in clean code, semantic structures, and pixel-perfect designs.</p>
+                    </div>
+                    <div class="about-image fade-in delay" style="display: flex; justify-content: center;">
+                         <img src="suraj%20pic.jpeg" alt="Suraj Mishra" style="border-radius: var(--radius-lg); max-width: 100%; box-shadow: 0 10px 40px rgba(99, 102, 241, 0.15); border: 2px solid var(--glass-border);">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills-section section" style="padding-top: 2rem;">
+            <div class="container">
+                <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+                <p style="text-align: center; color: var(--text-secondary); margin-top: -2rem; margin-bottom: 3rem;">A comprehensive overview of my technical expertise and tools I work with</p>
+                <div class="skills-grid">
+                    <div class="skills-card fade-in">
+                        <h3><span style="color:#6366f1;">&lt;&gt;</span> Programming Languages</h3>
+                        <div class="skills-wrapper">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skills-card fade-in delay">
+                        <h3><span style="color:#06b6d4;">&lt;/&gt;</span> Frontend Development</h3>
+                        <div class="skills-wrapper">
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="skills-card fade-in delay-2">
+                        <h3><span style="color:#a855f7;">🗄️</span> Backend Development</h3>
+                        <div class="skills-wrapper">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express.js</span>
+                        </div>
+                    </div>
+                    <div class="skills-card fade-in">
+                        <h3><span style="color:#f59e0b;">🛢️</span> Databases</h3>
+                        <div class="skills-wrapper">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>  
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card fade-in">
+                        <div class="project-img-placeholder" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);"></div>
+                        <div class="project-info">
+                            <h3>Analytics Dashboard</h3>
+                            <p>A high-performance SaaS dashboard with real-time data visualization and a dark-mode glassmorphic aesthetic.</p>
+                            <a href="#" class="project-link">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in delay">
+                        <div class="project-img-placeholder" style="background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);"></div>
+                        <div class="project-info">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A fully responsive modern shopping experience featuring smooth micro-animations and seamless checkout.</p>
+                            <a href="#" class="project-link">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in delay-2">
+                        <div class="project-img-placeholder" style="background: linear-gradient(135deg, #0ba360 0%, #3cba92 100%);"></div>
+                        <div class="project-info">
+                            <h3>Social Media App</h3>
+                            <p>A dynamic networking application built with performance and modern UI/UX principles in mind.</p>
+                            <a href="#" class="project-link">View Project &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="certificates" class="certificates section">
+            <div class="container">
+                <h2 class="section-title">My <span class="gradient-text">Certificates</span></h2>
+                <div class="project-grid">
+                    <div class="project-card fade-in">
+                        <div class="project-info">
+                            <h3>Foundations of AI and Machine Learning</h3>
+                            <p>Professional coursework completion from Coursera.</p>
+                            <a href="Coursera.pdf" target="_blank" class="project-link">View Certificate &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in delay">
+                        <div class="project-info">
+                            <h3>Generative AI mastermind</h3>
+                            <p>Professional recognition and achievement.</p>
+                            <a href="Suraj_Kumar_Mishra_Certificate%20(1).pdf" target="_blank" class="project-link">View Certificate &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="contact-card fade-in text-left" style="max-width: 600px; padding: 3rem; text-align: left;">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 1rem;">Get In <span class="gradient-text">Touch</span></h2>
+                    <p style="margin-bottom: 2rem; color: var(--text-secondary);">I'm actively looking for new opportunities! Whether you have a question, a project idea, or just want to say hi, my inbox is always open.</p>
+                    <form class="contact-form" onsubmit="event.preventDefault();" style="display: flex; flex-direction: column; gap: 1rem;">
+                        <input type="text" placeholder="Your Name" class="form-input" style="padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--glass-border); background: var(--bg-main); color: var(--text-primary); outline: none;" required>
+                        <input type="email" placeholder="Your Email" class="form-input" style="padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--glass-border); background: var(--bg-main); color: var(--text-primary); outline: none;" required>
+                        <textarea rows="5" placeholder="Your Message" class="form-input" style="padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--glass-border); background: var(--bg-main); color: var(--text-primary); outline: none; resize: vertical;" required></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Suraj Mishra. Built with passion.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/suraj-kumar-mishra-30112527b" target="_blank" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://github.com/Suraj-62" target="_blank" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://leetcode.com/u/mishra96/" target="_blank" aria-label="LeetCode">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </a>
+                <a href="mailto:mishrasuraj6299@gmail.com" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
